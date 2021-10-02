@@ -30,6 +30,7 @@ function App() {
 
                                 <li className="loginTeacher">
                                     <i className="fas fa-chalkboard-teacher"></i>
+                                    <Link to="/Professor" style={{ textDecoration: "none", color: "#848B92" }}>Professor</Link>
                                 </li>
 
                                 <li className="loginAluno">

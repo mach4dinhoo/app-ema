@@ -18,6 +18,8 @@ const Login = (props) => {
     return (
         <section className="login">
             <div className="loginContainer">
+
+                <h1 className="Aluno">Aluno</h1>
                 
                 <div className="cadastro">
                     {hasAccount ? (

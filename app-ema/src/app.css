@@ -114,12 +114,21 @@ button {
 }
 
 .cadastro {
-  text-transform: capitalize;
-  font-style    : normal;
-  font-weight   : normal;
-  font-size     : 40px;
-  line-height   : 60px;
-  display       : flex;
+  text-transform : capitalize;
+  font-style     : normal;
+  font-weight    : normal;
+  font-size      : 40px;
+  line-height    : 60px;
+  display        : flex;
   justify-content: center;
-  padding: 5vh;
+  padding        : 5vh;
+}
+
+.Professor,
+.Aluno {
+  text-transform : capitalize;
+  font-style     : normal;
+  font-weight    : normal;
+  display        : flex;
+  justify-content: center;
 }

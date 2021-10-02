@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './app.css'
 import fire from './database/fire'
-import Login from './Login'
-import Hero from './Hero'
+import Login from './components/Login'
+import Hero from './components/Hero'
 
 const App = () => {//i const
 
