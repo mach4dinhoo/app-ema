@@ -132,3 +132,69 @@ button {
   display        : flex;
   justify-content: center;
 }
+
+/* códigos abaixo pentense a sidebar */
+
+.sidenav {
+  width     : 240px;
+  background: linear-gradient(130.63deg, #A6BF4B -100.96%, #668C4A 100%);
+  position  : absolute;
+  height    : 87vh;
+  padding   : 0;
+  left      : -100%;
+  transition: all 0.3s;
+  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.59);
+}
+
+.sidenav.active {
+  left: 0;
+}
+
+.sidenavList {
+  padding: 0;
+}
+
+.Link{
+  width : 100%;
+  height: 60px;
+  border: 1px solid black;
+  margin: 0%;
+  display: flex;
+  flex-direction: row;
+  color:white;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sidenavList li:hover{
+  background-color: #A6BF4B;
+}
+
+ul li.active{
+  background-color: aqua;
+}
+
+ul li svg{
+  margin-right: 10px;
+}
+
+.sidenavList .sidenavLi {
+  list-style-type: none;
+  margin         : 10px 0;
+}
+
+.hamburguer {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.Main{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: yellow;
+}
