@@ -21,7 +21,7 @@ const Hero = ({ handleLogout }) => {
 
             <Router>
                 <div className="Main">
-                    <h1>Teste</h1>
+                    <h1>Testes</h1>
                 </div>
             </Router>
         </section>
