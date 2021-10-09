@@ -2,8 +2,10 @@ import React,{useState} from "react";
 import NavbarProf from "./NavbarProf";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import HomeDoisProfessor from '../Pages/Professor/HomeDoisProfessor';
-import homeProfessor from '../Pages/Professor/HomeProfessor';
+import Atividades from '../Pages/Professor/Atividades';
+import Home from '../Pages/Professor/Home';
+import Boletim from "../Pages/Professor/Boletim";
+
 const HeroProf = ({ handleLogout }) => {
 
     const [showNav, setShowNav] = useState(false)
@@ -20,8 +22,9 @@ const HeroProf = ({ handleLogout }) => {
 
 
                 <div className="MainHero">
-                    <Route path="/HomeDoisProfessor" component={HomeDoisProfessor} />
-                    <Route path="/HomeProfessor" component={homeProfessor} />
+                    <Route path="/Atividades" component={Atividades} />
+                    <Route path="/Home" component={Home} />
+                    <Route path="/Boletim" component={Boletim} />
                 </div>
             </Router>
         </section>
