@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import Navbar from './Navbar'
 import { GiHamburgerMenu } from 'react-icons/gi'
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter, BrowserRouter as Router, Route } from 'react-router-dom';
+import HomeAluno from '../Pages/HomeAluno';
+import homeDois from '../Pages/homeDois';
 
 const Hero = ({ handleLogout }) => {
 
@@ -9,19 +11,18 @@ const Hero = ({ handleLogout }) => {
 
     return (
         <section className="hero">
-            <nav>
-
-                <GiHamburgerMenu className="hamburguer" onClick={() => setShowNav(!showNav)} />
-
-                <button onClick={handleLogout}>Logout</button>
-
-            </nav>
-
-            <Navbar show={showNav} />
-
             <Router>
-                <div className="Main">
-                    <h1>Testes</h1>
+                <nav>
+                    <GiHamburgerMenu className="hamburguer" onClick={() => setShowNav(!showNav)} />
+
+                    <button onClick={handleLogout}>Logout</button>
+                </nav>
+                    <Navbar show={showNav} />
+                
+
+                <div className="MainHero">
+                <Route path="/HomeAluno" component={HomeAluno} />
+                <Route path="/homeDois" component={homeDois} />
                 </div>
             </Router>
         </section>

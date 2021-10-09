@@ -8,12 +8,16 @@ const Navbar = ({ show }) => {
             <ul className="sidenavList">
 
                 <li className="sidenavLi">
-                    <Link to="/Aluno" className="active Link">
+
+                    <Link to="/HomeAluno" className="active Link">
                         <AiOutlineHome />Home
                     </Link>
                 </li>
-                <li className="sidenavLi">
 
+                <li className="sidenavLi">
+                    <Link to="/homeDois" className="active Link">
+                        Home dois
+                    </Link>
                 </li>
             </ul>
         </div>
