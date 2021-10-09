@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import Navbar from './Navbar'
 import { GiHamburgerMenu } from 'react-icons/gi'
-import { BrowserRouter, BrowserRouter as Router, Route } from 'react-router-dom';
-import HomeAluno from '../Pages/HomeAluno';
-import homeDois from '../Pages/homeDois';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import HomeAluno from '../Pages/Aluno/HomeAluno';
+import homeDois from '../Pages/Aluno/homeDois';
 
 const Hero = ({ handleLogout }) => {
 
