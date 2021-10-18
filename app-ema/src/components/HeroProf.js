@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import NavbarProf from "./NavbarProf";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BrowserRouter as Router, Route } from 'react-router-dom';
@@ -15,18 +15,24 @@ const HeroProf = ({ handleLogout }) => {
             <Router>
                 <nav>
                     <GiHamburgerMenu className="hamburguer" onClick={() => setShowNav(!showNav)} />
-
+                    <div>
+                        <h1>4ºTI Tarde</h1>
+                    </div>
                     <button onClick={handleLogout}>Logout</button>
                 </nav>
+
                 <NavbarProf show={showNav} />
 
-
-                <div className="MainHero">
+                <div>
                     <Route path="/Atividades" component={Atividades} />
                     <Route path="/Home" component={Home} />
                     <Route path="/Boletim" component={Boletim} />
                 </div>
+
+
             </Router>
+
+
         </section>
     )
 }
